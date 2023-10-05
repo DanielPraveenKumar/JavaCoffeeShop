@@ -3,7 +3,7 @@ name: Snyk Security Check
 on:
   push:
     branches:
-      - feature
+      - Dev
       - master  # Change to your default branch name if needed
 jobs:
   snyk-test:
@@ -13,8 +13,6 @@ jobs:
       - name: Checkout Repository
 
         uses: actions/checkout@v2
-
- 
 
       - name: Set up Java
 
