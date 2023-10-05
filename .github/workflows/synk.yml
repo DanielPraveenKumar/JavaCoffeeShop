@@ -3,27 +3,19 @@ name: Snyk Security Check
 on:
   push:
     branches:
-      - feature
+      - Dev
       - master  # Change to your default branch name if needed
 jobs:
   snyk-test:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout Repository
-
         uses: actions/checkout@v2
 
- 
-
       - name: Set up Java
-
         uses: actions/setup-java@v2
-
         with:
-
           java-version: 11
-
           distribution: 'adopt'  # You can adjust the Java version as needed
 
  
